@@ -20,7 +20,6 @@ function CatsCard({cat, setFavoriteIds, setCats}: CatsCardProps): JSX.Element {
         className={`${cat.isFavorite ? styles.favorite : styles.notFavorite}`}
         onClick={() => {
           toggleFavorite(cat.id, setFavoriteIds, setCats);
-          console.log(cat.isFavorite);
         }}
       ></div>
     </div>
