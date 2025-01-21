@@ -1,5 +1,4 @@
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
   BrowserRouter,
@@ -10,11 +9,9 @@ import CatsPage from "./pages/CatsPage";
 function App() {
   return (
     <BrowserRouter basename="/frontend-challenge">
-
-        <Routes>
-          <Route path={AppRoute.Cats} element={<CatsPage />} />
-        </Routes>
-
+      <Routes>
+        <Route path={AppRoute.Cats} element={<CatsPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }
