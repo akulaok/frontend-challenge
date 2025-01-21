@@ -1,0 +1,48 @@
+.card {
+  transition: 0.3s;
+  position: relative;
+  height: 225px;
+  width: 225px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.card:hover .notFavorite{
+  opacity: 1;
+}
+
+.img {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.favorite {
+  background-image: url('../../assets/favorite.svg');
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 170px;
+  right: 4px;
+  opacity: 1;
+}
+
+.notFavorite:hover{
+  background-image: url('../../assets/favorite.svg');
+}
+
+.notFavorite {
+  background-image: url('../../assets/favorite_border.svg');
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 170px;
+  right: 4px;
+  opacity: 0;
+}
+
